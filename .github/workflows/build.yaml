@@ -13,4 +13,8 @@ jobs:
         run: pwd
       - name: list of files in dir 
         run: ls
+      - name: Check dotnet cli
+        run: dotnet
+      - name: check npm
+        run: npm
           
