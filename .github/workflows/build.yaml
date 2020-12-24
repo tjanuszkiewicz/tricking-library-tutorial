@@ -1,0 +1,14 @@
+name: Build my app
+
+on: push
+
+jobs:
+  super-lint:
+    name: Build app
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print current dir
+        run: pwd
+      - name: list of files in dir 
+        run: ls
+          
