@@ -11,10 +11,12 @@ jobs:
         uses: actions/checkout@v2
       - name: Print current dir
         run: pwd
-      - name: list of files in dir 
-        run: ls
+      - name: list of files
+        run: ls  
       - name: Check dotnet cli
-        run: dotnet
+        run: dotnet build
+      - name: list of files
+        run: ls TrickingLibrary.Api/ -R
       - name: check npm
-        run: npm
+        run: npm -v
           
